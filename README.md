@@ -47,21 +47,21 @@ poetry run python test/test_python-dotenv.py     # OSX/LINUX
 
 ```
 
-### Botebooks Importants (Par ordre de implementation)
+### Notebooks Importants (Par ordre de implementation)
 
 ```bash                          
-                                 1.Problematique 2.Anal.Exp 3.Feat.Engen. 4.Modelisation  5.Interpretation
-                                 --------------- ---------- ------------- --------------  ----------------
-STEP_1_Problematique             Project Info.   -          -             -               -
-STEP_2_Analyse_Exploratoire_EDA  -               Use RAW    -             -               -
-STEP_3_FEA_ENG_SET1              -               -          RAW > SetV1   -               -
-STEP_3_FEA_ENG_SET2              -               _          RAW > SetV2   -               -
+                                 1.Problem. 2.Anal.Exp 3.Feat.Enge. 4.Modelisation  5.Interpretation
+                                 ---------- ---------- ------------ --------------  ----------------
+STEP_1_Problematique             Prj.Info.  -          -            -               -
+STEP_2_Analyse_Exploratoire_EDA  -          Use RAW    -            -               -
+STEP_3_FEA_ENG_SET1              -          -          RAW > SetV1  -               -
+STEP_3_FEA_ENG_SET2              -          _          RAW > SetV2  -               -
 
-STEP_4_MOD_SET1_CUSTOM           -               -          -             SetV1 > Model1  Model1 > Eval.& Opt.
-STEP_4_MOD_SET2_CUSTOM           -               -          -             SetV2 > Model2  Model2 > Eval.& Opt.
-STEP_4_MOD_SET2_PIPELINE         -               -          -             SetV2 > Model3  -
+STEP_4_MOD_SET1_CUSTOM           -          -          -            SetV1 > Model1  Model1 > Eval.& Opt.
+STEP_4_MOD_SET2_CUSTOM           -          -          -            SetV2 > Model2  Model2 > Eval.& Opt.
+STEP_4_MOD_SET2_PIPELINE         -          -          -            SetV2 > Model3  -
 
-FULL_Sklearn_Pipeline            -               -          -             RAW   > Model4  -
+FULL_Sklearn_Pipeline            -          -          -            RAW   > Model4  -
 ```
 
 # Exécuter des scripts
