@@ -1,0 +1,309 @@
+# ===================================
+# .gitignore pour projet Python M3
+# ===================================
+
+# ============ Python ============
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+notebooks/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ============ Poetry ============
+# Poetry local config (si no quieres compartir la versión específica)
+# poetry.lock  # Descomenta si NO quieres versionar poetry.lock
+
+# Poetry virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============ pyenv ============
+.python-version
+
+# ============ pipenv ============
+Pipfile.lock
+
+# ============ PEP 582 ============
+__pypackages__/
+
+# ============ Celery ============
+celerybeat-schedule
+celerybeat.pid
+
+# ============ SageMath ============
+*.sage.py
+
+# ============ Environments ============
+.env
+.env.local
+.env.*.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# ============ Spyder ============
+.spyderproject
+.spyproject
+
+# ============ Rope ============
+.ropeproject
+
+# ============ mkdocs ============
+/site
+
+# ============ mypy ============
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============ Pyre ============
+.pyre/
+
+# ============ pytype ============
+.pytype/
+
+# ============ Cython ============
+cython_debug/
+
+# ============ IDEs ============
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============ macOS ============
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.apdisk
+
+# ============ Windows ============
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# ============ Linux ============
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============ Datos y Modelos ============
+# Datos grandes (descomenta según necesites)
+# data/raw/*
+# data/processed/*
+# !data/raw/.gitkeep
+# !data/processed/.gitkeep
+
+# Modelos entrenados
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.onnx
+models/
+checkpoints/
+
+# Datasets grandes
+*.csv
+*.parquet
+*.feather
+*.json
+*.jsonl
+*.xml
+*.txt
+# Excepciones (archivos pequeños que SÍ quieres versionar)
+!requirements.txt
+!README.md
+!data/.gitkeep
+
+# ============ Notebooks ============
+# Outputs de notebooks (opcional, depende de tu workflow)
+notebooks/*.html
+notebooks/*.pdf
+notebooks/*_files/
+
+# ============ Logs y temporales ============
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ============ Específico del proyecto ============
+# Cachés personalizados
+.cache/
+cache/
+
+# Resultados y outputs
+results/
+output/
+outputs/
+
+# Configuraciones locales
+config.local.yaml
+config.local.json
+secrets.yaml
+secrets.json
+
+# Credenciales
+credentials.json
+*.key
+*.pem
+.credentials/
+
+# ============ Docker (si lo usas) ============
+*.dockerfile.swp
+docker-compose.override.yml
+
+# ============ Documentación ============
+# Si usas Sphinx u otros
+doc/_build/
+doc/_static/
+doc/_templates/
+
+# ============ Tests ============
+# Coverage reports
+.coverage
+htmlcov/
+
+# ============ Misc ============
+# Backups
+*.bak
+*.backup
+*~
+
+# Archivos temporales de sistema
+.pid
+*.pid
